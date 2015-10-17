@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The New Zealand Internet Map</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link rel="stylesheet" href="css/whhg.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <i class="icon-world"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-police"></i> Police map</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-gun"></i> NZ Defence map</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-tv"></i> Fairfax Media map</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-travel"></i> Trivago map</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-info-sign"></i> About</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-emailalt"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="jumbotron">
+							<p style="float: left;"><img src="images/nz.png"></p>
+							<h1>The New Zealand Internet Map</h1>
+								<p>The NZ Internet map is a bi-dimensional presenatation of links between NZ owned websites.
+									Every node represents a website and the size is determined by page rank.
+									The higher the page rank the larger the node. The closer the node the stronger the link of the two nodes.
+								</p>
+								<a href="#menu-toggle" class="btn btn-primary btn-lg" id="menu-toggle"><i class="icon-tabletscreensize"></i> View full screen</a>
+						</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="map-canvas">
+            
+            
+            
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
